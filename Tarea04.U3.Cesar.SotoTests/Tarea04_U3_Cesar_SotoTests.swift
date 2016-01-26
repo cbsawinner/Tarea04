@@ -31,7 +31,7 @@ class Tarea04_U3_Cesar_SotoTests: XCTestCase {
         //1era Prueba enviando usuario correcto.
         XCTAssertEqual(User(us:"Juan",psw:"1234").getUser(),"Juan","Prueba de Usuario")
         //2era Prueba enviando usuario incorrecto.
-       // XCTAssertEqual(User(us:"Juan",psw:"1234").getUser(),"Pedro","Prueba de Usuario")
+       //XCTAssertEqual(User(us:"Juan",psw:"1234").getUser(),"Pedro","Prueba de Usuario")
     }
     
     func testPerformanceExample() {
