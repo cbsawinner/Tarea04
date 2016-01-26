@@ -14,6 +14,7 @@
 		DB7CDAD31C4DE7A8002E776B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7CDAD11C4DE7A8002E776B /* LaunchScreen.storyboard */; };
 		DB7CDADE1C4DE7A8002E776B /* Tarea04_U3_Cesar_SotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CDADD1C4DE7A8002E776B /* Tarea04_U3_Cesar_SotoTests.swift */; };
 		DB7CDAE91C4DE7A8002E776B /* Tarea04_U3_Cesar_SotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CDAE81C4DE7A8002E776B /* Tarea04_U3_Cesar_SotoUITests.swift */; };
+		DB7CDAF71C4DE7E8002E776B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7CDAF61C4DE7E8002E776B /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DB7CDAE41C4DE7A8002E776B /* Tarea04.U3.Cesar.SotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tarea04.U3.Cesar.SotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7CDAE81C4DE7A8002E776B /* Tarea04_U3_Cesar_SotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tarea04_U3_Cesar_SotoUITests.swift; sourceTree = "<group>"; };
 		DB7CDAEA1C4DE7A8002E776B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB7CDAF61C4DE7E8002E776B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				DB7CDACF1C4DE7A8002E776B /* Assets.xcassets */,
 				DB7CDAD11C4DE7A8002E776B /* LaunchScreen.storyboard */,
 				DB7CDAD41C4DE7A8002E776B /* Info.plist */,
+				DB7CDAF61C4DE7E8002E776B /* User.swift */,
 			);
 			path = Tarea04.U3.Cesar.Soto;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				DB7CDACB1C4DE7A8002E776B /* ViewController.swift in Sources */,
 				DB7CDAC91C4DE7A8002E776B /* AppDelegate.swift in Sources */,
+				DB7CDAF71C4DE7E8002E776B /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Tarea04.U3.Cesar.Soto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Inacap.Tarea04-U3-Cesar-Soto";
@@ -411,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Tarea04.U3.Cesar.Soto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Inacap.Tarea04-U3-Cesar-Soto";
@@ -485,6 +491,7 @@
 				DB7CDAEF1C4DE7A8002E776B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB7CDAF01C4DE7A8002E776B /* Build configuration list for PBXNativeTarget "Tarea04.U3.Cesar.SotoTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +500,7 @@
 				DB7CDAF21C4DE7A8002E776B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB7CDAF31C4DE7A8002E776B /* Build configuration list for PBXNativeTarget "Tarea04.U3.Cesar.SotoUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +509,7 @@
 				DB7CDAF51C4DE7A8002E776B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

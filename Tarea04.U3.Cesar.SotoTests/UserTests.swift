@@ -1,19 +1,18 @@
 //
-//  Tarea04_U3_Cesar_SotoTests.swift
-//  Tarea04.U3.Cesar.SotoTests
+//  UserTests.swift
+//  Tarea04.U3.Cesar.Soto
 //
 //  Created by Cesar Soto Alarcon on 19-01-16.
 //  Copyright © 2016 Cesar Soto Alarcon. All rights reserved.
 //
 
-import XCTest
 import UIKit
 import Tarea04_U3_Cesar_Soto
+import XCTest
 
-@testable import Tarea04_U3_Cesar_Soto
 
-class Tarea04_U3_Cesar_SotoTests: XCTestCase {
-   
+class UserTest: XCTestCase {
+    
     
     override func setUp() {
         super.setUp()
@@ -28,17 +27,12 @@ class Tarea04_U3_Cesar_SotoTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        //1era Prueba enviando usuario correcto.
-        XCTAssertEqual(User(us:"Juan",psw:"1234").getUser(),"Juan","Prueba de Usuario")
-        //2era Prueba enviando usuario incorrecto.
-       // XCTAssertEqual(User(us:"Juan",psw:"1234").getUser(),"Pedro","Prueba de Usuario")
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
             var users=[User]()
-            var aux=[User]()
             var j=0
             var i=1
             let totReg=12
@@ -46,24 +40,20 @@ class Tarea04_U3_Cesar_SotoTests: XCTestCase {
             users+=[User(us:"Juan",psw:"34"),User(us:"Pedro",psw:"11"),User(us:"Ana",psw:"12"),User(us:"Matias",psw:"09"),
                 User(us:"Barbara",psw:"99"),User(us:"Carlos",psw:"77"),User(us:"Francisca",psw:"44"),User(us:"Dario",psw:"19"),
                 User(us:"Luisa",psw:"22"),User(us:"Ulises",psw:"11"),User(us:"Ximena",psw:"88"),User(us:"Andres",psw:"77")]
-            //Inicializamos el Arreglo auxiliar
-            aux+=[User(us:"",psw:"")]
             //Aplicamos el Algoritmo de Ordenamiento de Inserción.
             
-            while(i<totReg){
-                aux[0]=users[i]
-                
+            while(i<=totReg){
+                var aux=users[i]
+                aux=users[i]
                 j=i-1
-                while(j>=0 && users[j].getUser()>aux[0].getUser()){
+                while(j>0 && users[j].getUser()>aux.getUser()){
                     users[j+1]=users[j]
                     j--
                 }
-                users[j+1]=aux[0]
+                users[j+1]=aux
                 i++
             }
             //Recorremos el Arreglo para mostrar los datos Ordenados
-            print("Lista Ordenada \n")
-            print("--------------- \n")
             for u in users{
                 print(u.getUser() + "\n")
             }
@@ -71,6 +61,5 @@ class Tarea04_U3_Cesar_SotoTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
     
 }
